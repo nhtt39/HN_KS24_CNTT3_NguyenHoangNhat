@@ -17,7 +17,7 @@ create table course (
 create table enrollment (
 	student_id int,
     course_id int,
-    grade decimal default 0,
+    grade decimal(4,2) default 0,
     foreign key (student_id) references students (student_id),
     foreign key (course_id) references course (course_id)
 );
